@@ -1,0 +1,3566 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/aueb/cityontology/athens"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/aueb/cityontology/athens">
+    <Prefix name="" IRI="http://www.semanticweb.org/aueb/cityontology/athens#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+The following ontologies have been utilized :
+1.km4city, the DISIT Knowledge Model for City and Mobility
+2. Urenio City Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vassilis Ep. Lamprakakis</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Athens city ontology was created during the implementation of &quot;Big Civic Data Management and Analysis&quot; thesis for Athens University of Economy and Business (School of Information Sciences and Technology / Department of Informatics.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#nonRecycling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#paravasi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndustrialEstate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GardenAppartments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalReserve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityEquipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityOrganizations"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProgramma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Responsive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wired"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Web"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanResourcesService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monument"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShareAbouts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBike"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTimiRypou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TreeLine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InnovationOffice"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entertainement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MixtedResidential"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GSM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wi-Max"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanResidential"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Open_Tree_Map"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTypoLampas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVehiclesEquip"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasKlhshdate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LinkedData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommercialShops-personalservicesstores"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metro"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CleaningService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theaters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommonBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurants"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSimeioLamptira"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#timiZonis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StructuredData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTypoLamptira"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#idioktisies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prepared.ly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApacheLicense"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#simeioStylou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CraftPlants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentToEmployees"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDateOfBirth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityAdministration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#e-requestPlatform"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requestConsumed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Committees"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CitizInvestor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasKlhsh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudentResidential"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasKatastasi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEmployee"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasArithmosKadwn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#District"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MunicipalBoard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityPlanningService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasKatastasiLamptira"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#isxysLamptira"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StoragePremises"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityEconomy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPerParavasis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSocialCareEquip"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOdoGiaAkinito"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWInd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#kolymvisi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentToGovernment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Local_Wiki"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commercial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValueWeather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entrepreneurship"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValuePollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentToCitizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cinemas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Users"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationPremises-primary-secondary-tertiary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicTransportFacilities"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTaxi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Research"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHumanResources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnstructuredData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#collects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasE-request"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYpiresia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Funding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandUse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicRegistry"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPeriohi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotels-low-capacity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityEmployee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Platform"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasaitimaperigrafi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanOperatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotelsAndTouristFacilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfrastrusturePhysical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WordPress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Native"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandUse-Specific"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProfessionalWorkshops"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BigData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdministrationService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialMedia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMarkaKaiChroma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#completed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Safety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Residence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuildingBlock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportsService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuildingsService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSewage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTheaters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tourism,TourismRecreationAreas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalEquipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-PollutingIndustrialAreas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasperiohistreetnum"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cooperates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicles"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasIsxyLamptira"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportFacilities"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOnomaRypou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#recycling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#inProgress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OfficesBanksInsurances"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Residential"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFinancial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Development_FastPass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fload"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#xDSL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#metadata"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSimeioStylou"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalHazard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialCareSpaces-healthcenters-kindergartens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaaS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EntertainmentLeisureShops"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityGovernance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#perioxi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WholesaleAreas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfrastructureDigital"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParavasi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCinemas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#e_governance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEidikotita"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreeSpaces-UrbanGreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#katastasi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Urbanflow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSocialSolidarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KPI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMeanTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpoudes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalServices"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHighTemperature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCollectedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmallGreenSpace"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMonada"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasperiohistreet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasaitimaproodos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterService"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Open_Spending"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.disit.org/km4city/schema#FinancialService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#simeioParavasis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cloud"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SingleFamilyResidential"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalFacilities-libraries-galleries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WholesalePremises"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MITLicense"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTimiGiaTimiZonis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BroadbandNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lighting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Air"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOdoTheatrou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fix_My_Street"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LabourMarket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ADSL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HistoricCentre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PollutingIndustrialAreas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CiviRCM"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSportKolymvisi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOrganizations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityCentre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assessment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CivicInsight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Market"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommonUseSpace"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasKatigoriaRypou"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIsxy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UniversityCampus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEducation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TechnologicalHazard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#datamodel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExpertSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandUse-General"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIdioktisies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Square"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntelligentSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Migrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SaaS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Satelite"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWeatherDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MassUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#postGraduate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSimeioParavasis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommercialPremises"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BSD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligionSpaces-Churches"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wi-Fi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSimeio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgriculturalPremises"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityGovernment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#basketball"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicMeetingPlaces-theaters-cinemas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#River"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanTrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStudies"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProgrammaKolymvitiriou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#eService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heakth,Health"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPosoParavasis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wireless"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightingEquipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Active"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#volleyball"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlanning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhabitant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialSolidarityService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lake"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConsumed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndustrialPlants"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasaitimakatigoria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medical"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOdos"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTimiZonis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ItemLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallCenter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rypos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proprietary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOdoGiaTimiZonis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visualisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityDecisionSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#works"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FTTH"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasKatigoriaApor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCleaning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hoyrespiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UtilityAmenitiesAreas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoadService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Petrol-LPG-shops"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Passive"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMunPolice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreePublicSpaces-squares-parks-woods-playgrounds"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPoso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalEcosystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VDSL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApplicationType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParkingPremises"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MLP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLightingEquip"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksInCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRoads"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#posoParavasis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StreetMix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreenSpace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Open_Air"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecreationShops"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDimotEnot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMetro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spacehive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntelligentAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Park"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherSpecificUses-military-cemeteries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCalls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taxi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBuildings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicAdministrationPremises"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityLife"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOnomaTheatrou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crowdsourcing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IaaS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLowTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunityBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WasteBins"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStathmoMetrisis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GPL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasaitimadate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPerioxiRypou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecretaryGeneralOffice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInnovation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDateRypou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smartphone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Improve_My_City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Open_Data_Catalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentToBusiness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bike"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TechnologyPark"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#use"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MunicipalPoliceService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonDevelopedArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consumes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasArithmoGiaAkinito"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Citizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensorType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FunctionCivic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Port"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#woman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#typosLamptira"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialCareEquipment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smart_Marketplace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Joomla"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SewageService"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStoixeiaAthloumenou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#man"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthBuildings-hospitals-clinics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWasteBinsEquip"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCheckinKolymvitirio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mayor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecisionMaking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlanIT_OS"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Application"/>
+        <Class IRI="#Software"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CityGovernance"/>
+        <Class IRI="#e_governance"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.disit.org/km4city/schema#FinancialService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.disit.org/km4city/schema#FinancialService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ADSL"/>
+        <Class IRI="#Wired"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Active"/>
+        <Class IRI="#SensorType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdministrationService"/>
+        <Class IRI="#CityGovernance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgriculturalPremises"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Air"/>
+        <Class IRI="#NaturalEcosystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <Class IRI="#District"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ApacheLicense"/>
+        <Class IRI="#OpenSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Application"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Application"/>
+        <Class IRI="#SaaS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ApplicationType"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assessment"/>
+        <Class IRI="#CityGovernance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BSD"/>
+        <Class IRI="#OpenSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BigData"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bike"/>
+        <Class IRI="#TransportServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BroadbandNetwork"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#InfrastrusturePhysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuildingBlock"/>
+        <Class IRI="#InfrastrusturePhysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuildingsService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuildingsService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#TransportServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessLocation"/>
+        <Class IRI="#CityEconomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallCenter"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#TransportServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cinemas"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citizen"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityAdministration"/>
+        <Class IRI="#CityGovernment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityCentre"/>
+        <Class IRI="#LandUse-General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityDecisionSystem"/>
+        <Class IRI="#CityGovernment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityEconomy"/>
+        <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityEmployee"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityEmployee"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityEquipment"/>
+        <Class IRI="#FunctionCivic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityGovernance"/>
+        <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityGovernment"/>
+        <Class IRI="#FunctionCivic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityLife"/>
+        <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityManagement"/>
+        <Class IRI="#CityGovernment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityOrganizations"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityPlanningService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityPlanningService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityPolicy"/>
+        <Class IRI="#CityGovernment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityRepresentation"/>
+        <Class IRI="#CityGovernment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityService"/>
+        <Class IRI="#FunctionCivic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CleaningService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CleaningService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cloud"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commercial"/>
+        <Class IRI="#District"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommercialPremises"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommercialShops-personalservicesstores"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committees"/>
+        <Class IRI="#CityManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommonBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommonUseSpace"/>
+        <Class IRI="#PublicSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunityBuilding"/>
+        <Class IRI="#CityLife"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumer"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CraftPlants"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crime"/>
+        <Class IRI="#EventResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crowdsourcing"/>
+        <Class IRI="#Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalFacilities-libraries-galleries"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalServices"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSource"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecisionMaking"/>
+        <Class IRI="#CityGovernance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalEquipment"/>
+        <Class IRI="#CityEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#District"/>
+        <Class IRI="#InfrastrusturePhysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationPremises-primary-secondary-tertiary"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employee"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnergyService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnergyService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Entertainement"/>
+        <Class IRI="#CityLife"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EntertainmentLeisureShops"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Entrepreneurship"/>
+        <Class IRI="#CityEconomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Environment"/>
+        <Class IRI="#CityLife"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventResponse"/>
+        <Class IRI="#FunctionCivic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExpertSystem"/>
+        <Class IRI="#IntelligentSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expo"/>
+        <Class IRI="#District"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FTTH"/>
+        <Class IRI="#Wired"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fire"/>
+        <Class IRI="#EventResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fire"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fload"/>
+        <Class IRI="#EventResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreePublicSpaces-squares-parks-woods-playgrounds"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreeSpaces-UrbanGreen"/>
+        <Class IRI="#LandUse-General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Funding"/>
+        <Class IRI="#CityEconomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GPL"/>
+        <Class IRI="#OpenSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GSM"/>
+        <Class IRI="#Wireless"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GardenAppartments"/>
+        <Class IRI="#Residential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentToBusiness"/>
+        <Class IRI="#e_governance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentToCitizen"/>
+        <Class IRI="#e_governance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentToEmployees"/>
+        <Class IRI="#e_governance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentToGovernment"/>
+        <Class IRI="#e_governance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreenSpace"/>
+        <Class IRI="#InfrastrusturePhysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthBuildings-hospitals-clinics"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HistoricCentre"/>
+        <Class IRI="#District"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotels-low-capacity"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotelsAndTouristFacilities"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanResourcesService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanResourcesService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IaaS"/>
+        <Class IRI="#Cloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndustrialEstate"/>
+        <Class IRI="#District"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndustrialPlants"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhabitant"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InnovationOffice"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntelligentAgent"/>
+        <Class IRI="#IntelligentSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntelligentSystem"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ItemLocation"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KPI"/>
+        <Class IRI="#Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LabourMarket"/>
+        <Class IRI="#CityEconomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lake"/>
+        <Class IRI="#NaturalEcosystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandUse"/>
+        <Class IRI="#InfrastrusturePhysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandUse-General"/>
+        <Class IRI="#LandUse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandUse-Specific"/>
+        <Class IRI="#LandUse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lighting"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightingEquipment"/>
+        <Class IRI="#CityEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LinkedData"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MITLicense"/>
+        <Class IRI="#OpenSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MLP"/>
+        <Class IRI="#OpenSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mall"/>
+        <Class IRI="#District"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Management"/>
+        <Class IRI="#CityEconomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Market"/>
+        <Class IRI="#CityEconomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MassUp"/>
+        <Class IRI="#Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mayor"/>
+        <Class IRI="#CityManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medical"/>
+        <Class IRI="#EventResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <Class IRI="#TransportServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Migrant"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MixtedResidential"/>
+        <Class IRI="#LandUse-General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monument"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MunicipalBoard"/>
+        <Class IRI="#CityManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MunicipalPoliceService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MunicipalPoliceService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Native"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalEcosystem"/>
+        <Class IRI="#InfrastrusturePhysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalHazard"/>
+        <Class IRI="#EventResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalReserve"/>
+        <Class IRI="#LandUse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noise"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-PollutingIndustrialAreas"/>
+        <Class IRI="#LandUse-General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonDevelopedArea"/>
+        <Class IRI="#LandUse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficesBanksInsurances"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenData"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenSource"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenSpace"/>
+        <Class IRI="#PublicSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherSpecificUses-military-cemeteries"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaaS"/>
+        <Class IRI="#Cloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Park"/>
+        <Class IRI="#GreenSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParkingPremises"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Passive"/>
+        <Class IRI="#SensorType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Petrol-LPG-shops"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Planning"/>
+        <Class IRI="#CityGovernance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Platform"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Platform"/>
+        <Class IRI="#PaaS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PollutingIndustrialAreas"/>
+        <Class IRI="#LandUse-General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pollution"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Port"/>
+        <Class IRI="#District"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProfessionalWorkshops"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proprietary"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicAdministrationPremises"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicMeetingPlaces-theaters-cinemas"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicRegistry"/>
+        <Class IRI="#DataSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicSpace"/>
+        <Class IRI="#InfrastrusturePhysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicTransportFacilities"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecreationShops"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligionSpaces-Churches"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Research"/>
+        <Class IRI="#CityEconomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residence"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resident"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residential"/>
+        <Class IRI="#LandUse-General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Responsive"/>
+        <Class IRI="#ApplicationType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurants"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#River"/>
+        <Class IRI="#NaturalEcosystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoadService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoadService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SaaS"/>
+        <Class IRI="#Cloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safety"/>
+        <Class IRI="#CityLife"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Satelite"/>
+        <Class IRI="#Wireless"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sea"/>
+        <Class IRI="#NaturalEcosystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecretaryGeneralOffice"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#DataSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensorType"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SewageService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SewageService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SingleFamilyResidential"/>
+        <Class IRI="#Residential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmallGreenSpace"/>
+        <Class IRI="#GreenSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartObject"/>
+        <Class IRI="#SmartSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartSystem"/>
+        <Class IRI="#IntelligentSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smartphone"/>
+        <Class IRI="#ApplicationType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smartphone"/>
+        <Class IRI="#DataSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social"/>
+        <Class IRI="#EventResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialCareEquipment"/>
+        <Class IRI="#CityEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialCareSpaces-healthcenters-kindergartens"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialMedia"/>
+        <Class IRI="#DataSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialSolidarityService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialSolidarityService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportFacilities"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportsService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Square"/>
+        <Class IRI="#PublicSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StoragePremises"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StructuredData"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudentResidential"/>
+        <Class IRI="#Residential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <Class IRI="#TransportServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TechnologicalHazard"/>
+        <Class IRI="#EventResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TechnologyPark"/>
+        <Class IRI="#District"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theaters"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportServices"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TreeLine"/>
+        <Class IRI="#GreenSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type"/>
+        <Class IRI="#FunctionCivic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UniversityCampus"/>
+        <Class IRI="#District"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnstructuredData"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UrbanOperatingSystem"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UrbanResidential"/>
+        <Class IRI="#Residential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UrbanTrain"/>
+        <Class IRI="#TransportServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Users"/>
+        <Class IRI="#DataSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UtilityAmenitiesAreas"/>
+        <Class IRI="#LandUse-General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VDSL"/>
+        <Class IRI="#Wired"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Value"/>
+        <Class IRI="#Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicles"/>
+        <Class IRI="#CityEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visitor"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visualisation"/>
+        <Class IRI="#Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WasteBins"/>
+        <Class IRI="#CityEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterService"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterService"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weather"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Web"/>
+        <Class IRI="#ApplicationType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Web"/>
+        <Class IRI="#DataSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WholesaleAreas"/>
+        <Class IRI="#LandUse-General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WholesalePremises"/>
+        <Class IRI="#LandUse-Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wi-Fi"/>
+        <Class IRI="#Wireless"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wi-Max"/>
+        <Class IRI="#Wireless"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wired"/>
+        <Class IRI="#BroadbandNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wireless"/>
+        <Class IRI="#BroadbandNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wood"/>
+        <Class IRI="#GreenSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wood"/>
+        <Class IRI="#NaturalEcosystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Work"/>
+        <Class IRI="#CityEconomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#basketball"/>
+        <Class IRI="#SportsService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#completed"/>
+        <Class IRI="#e-requestPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#datamodel"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#e-requestPlatform"/>
+        <Class IRI="#CityAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#e-requestPlatform"/>
+        <Class IRI="#CityService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#e-requestPlatform"/>
+        <Class IRI="#Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eService"/>
+        <Class IRI="#InfrastructureDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#e_governance"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#idioktisies"/>
+        <Class IRI="#CommonBuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#inProgress"/>
+        <Class IRI="#e-requestPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#isxysLamptira"/>
+        <Class IRI="#LightingEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#katastasi"/>
+        <Class IRI="#LightingEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#kolymvisi"/>
+        <Class IRI="#SportsService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#man"/>
+        <Class IRI="#CityEmployee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#metadata"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nonRecycling"/>
+        <Class IRI="#CleaningService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#paravasi"/>
+        <Class IRI="#MunicipalPoliceService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#perioxi"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#posoParavasis"/>
+        <Class IRI="#MunicipalPoliceService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#postGraduate"/>
+        <Class IRI="#CityEmployee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#recycling"/>
+        <Class IRI="#CleaningService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rypos"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#simeioParavasis"/>
+        <Class IRI="#MunicipalPoliceService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#simeioStylou"/>
+        <Class IRI="#LightingEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#timiZonis"/>
+        <Class IRI="#CommonBuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#typosLamptira"/>
+        <Class IRI="#LightingEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#volleyball"/>
+        <Class IRI="#SportsService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#woman"/>
+        <Class IRI="#CityEmployee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#xDSL"/>
+        <Class IRI="#Wired"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heakth,Health"/>
+        <Class IRI="#CityLife"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tourism,TourismRecreationAreas"/>
+        <Class IRI="#LandUse-General"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.disit.org/km4city/schema#FinancialService"/>
+        <Class IRI="#CleaningService"/>
+        <Class IRI="#EnvironmentService"/>
+        <Class IRI="#HumanResourcesService"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bike"/>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Car"/>
+        <Class IRI="#Taxi"/>
+        <Class IRI="#UrbanTrain"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Committees"/>
+        <Class IRI="#Mayor"/>
+        <Class IRI="#MunicipalBoard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crime"/>
+        <Class IRI="#Fire"/>
+        <Class IRI="#Fload"/>
+        <Class IRI="#NaturalHazard"/>
+        <Class IRI="#TechnologicalHazard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GovernmentToBusiness"/>
+        <Class IRI="#GovernmentToCitizen"/>
+        <Class IRI="#GovernmentToEmployees"/>
+        <Class IRI="#GovernmentToGovernment"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InfrastructureDigital"/>
+        <Class IRI="#InfrastrusturePhysical"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LightingEquipment"/>
+        <Class IRI="#SocialCareEquipment"/>
+        <Class IRI="#Vehicles"/>
+        <Class IRI="#WasteBins"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Funding"/>
+        <NamedIndividual IRI="#CitizInvestor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Management"/>
+        <NamedIndividual IRI="#CiviRCM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdministrationService"/>
+        <NamedIndividual IRI="#CivicInsight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BusinessLocation"/>
+        <NamedIndividual IRI="#Development_FastPass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdministrationService"/>
+        <NamedIndividual IRI="#Fix_My_Street"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Environment"/>
+        <NamedIndividual IRI="#Hoyrespiro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdministrationService"/>
+        <NamedIndividual IRI="#Improve_My_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CommunityBuilding"/>
+        <NamedIndividual IRI="#Local_Wiki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Environment"/>
+        <NamedIndividual IRI="#Open_Air"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OpenData"/>
+        <NamedIndividual IRI="#Open_Data_Catalogue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Assessment"/>
+        <NamedIndividual IRI="#Open_Spending"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Environment"/>
+        <NamedIndividual IRI="#Open_Tree_Map"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UrbanOperatingSystem"/>
+        <NamedIndividual IRI="#PlanIT_OS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Safety"/>
+        <NamedIndividual IRI="#Prepared.ly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planning"/>
+        <NamedIndividual IRI="#ShareAbouts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Market"/>
+        <NamedIndividual IRI="#Smart_Marketplace"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Funding"/>
+        <NamedIndividual IRI="#Spacehive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planning"/>
+        <NamedIndividual IRI="#StreetMix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UrbanOperatingSystem"/>
+        <NamedIndividual IRI="#Urbanflow"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#Fix_My_Street"/>
+        <NamedIndividual IRI="#Improve_My_City"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Joomla"/>
+        <NamedIndividual IRI="#WordPress"/>
+    </SameIndividual>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBike"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBus"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCar"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCleaning"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasE-request"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEducation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEnergy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEnvironment"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFinancial"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHumanResources"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInnovation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMetro"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMunPolice"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRoads"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSewage"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSocialSolidarity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTaxi"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWater"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requestConsumed"/>
+        <ObjectProperty IRI="#isConsumed"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#collects"/>
+        <ObjectProperty IRI="#isCollectedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#supportedBy"/>
+        <ObjectProperty IRI="#supports"/>
+    </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#collects"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#consumes"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isCollectedBy"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isConsumed"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#supportedBy"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#supports"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#cooperates"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#collects"/>
+        <Class IRI="#Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consumes"/>
+        <Class IRI="#People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cooperates"/>
+        <Class IRI="#CityManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBike"/>
+        <Class IRI="#TransportServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBuildings"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBuildings"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBus"/>
+        <Class IRI="#TransportServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCalls"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCalls"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCar"/>
+        <Class IRI="#TransportServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCinemas"/>
+        <Class IRI="#LandUse-Specific"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCleaning"/>
+        <Class IRI="#CleaningService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasE-request"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasE-request"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEducation"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEducation"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEmployee"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEnergy"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEnergy"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEnvironment"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEnvironment"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFinancial"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFinancial"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHumanResources"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHumanResources"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIdioktisies"/>
+        <Class IRI="#CommonBuilding"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInnovation"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInnovation"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIsxy"/>
+        <Class IRI="#LightingEquipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasKatastasi"/>
+        <Class IRI="#LightingEquipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLightingEquip"/>
+        <Class IRI="#CityEquipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMetro"/>
+        <Class IRI="#TransportServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMunPolice"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMunPolice"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOnomaRypou"/>
+        <Class IRI="#Pollution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOrganizations"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOrganizations"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParavasi"/>
+        <Class IRI="#MunicipalPoliceService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPerioxiRypou"/>
+        <Class IRI="#Pollution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlanning"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlanning"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPosoParavasis"/>
+        <Class IRI="#MunicipalPoliceService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRoads"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRoads"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSewage"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSewage"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSimeioParavasis"/>
+        <Class IRI="#MunicipalPoliceService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSimeioStylou"/>
+        <Class IRI="#LightingEquipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSocialCareEquip"/>
+        <Class IRI="#CityEquipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSocialSolidarity"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSocialSolidarity"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSportKolymvisi"/>
+        <Class IRI="#SportsService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpoudes"/>
+        <Class IRI="#CityEmployee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStatus"/>
+        <Class IRI="#e-requestPlatform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTaxi"/>
+        <Class IRI="#TransportServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTheaters"/>
+        <Class IRI="#LandUse-Specific"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTimiZonis"/>
+        <Class IRI="#CommonBuilding"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTypoLamptira"/>
+        <Class IRI="#LightingEquipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVehiclesEquip"/>
+        <Class IRI="#CityEquipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWasteBinsEquip"/>
+        <Class IRI="#CityEquipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWater"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWater"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCollectedBy"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConsumed"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requestConsumed"/>
+        <Class IRI="#e-requestPlatform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportedBy"/>
+        <Class IRI="#CityGovernment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supports"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#use"/>
+        <Class IRI="#People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#works"/>
+        <Class IRI="#CityEmployee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksInCity"/>
+        <Class IRI="#CityEmployee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#collects"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consumes"/>
+        <Class IRI="#CityService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cooperates"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBike"/>
+        <Class IRI="#Bike"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBuildings"/>
+        <Class IRI="#BuildingsService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBus"/>
+        <Class IRI="#Bus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCalls"/>
+        <Class IRI="#CallCenter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCar"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCinemas"/>
+        <Class IRI="#Cinemas"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCleaning"/>
+        <Class IRI="#nonRecycling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCleaning"/>
+        <Class IRI="#recycling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasE-request"/>
+        <Class IRI="#e-requestPlatform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEducation"/>
+        <Class IRI="#EducationService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEmployee"/>
+        <Class IRI="#CityEmployee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEnergy"/>
+        <Class IRI="#EnergyService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEnvironment"/>
+        <Class IRI="#EnvironmentService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFinancial"/>
+        <Class IRI="http://www.disit.org/km4city/schema#FinancialService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHumanResources"/>
+        <Class IRI="#HumanResourcesService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIdioktisies"/>
+        <Class IRI="#idioktisies"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInnovation"/>
+        <Class IRI="#InnovationOffice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIsxy"/>
+        <Class IRI="#isxysLamptira"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasKatastasi"/>
+        <Class IRI="#katastasi"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLightingEquip"/>
+        <Class IRI="#LightingEquipment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetro"/>
+        <Class IRI="#Metro"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMunPolice"/>
+        <Class IRI="#MunicipalPoliceService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOnomaRypou"/>
+        <Class IRI="#rypos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOrganizations"/>
+        <Class IRI="#CityOrganizations"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParavasi"/>
+        <Class IRI="#paravasi"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPerioxiRypou"/>
+        <Class IRI="#perioxi"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlanning"/>
+        <Class IRI="#CityPlanningService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPosoParavasis"/>
+        <Class IRI="#posoParavasis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRoads"/>
+        <Class IRI="#RoadService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSewage"/>
+        <Class IRI="#SewageService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSimeioParavasis"/>
+        <Class IRI="#simeioParavasis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSimeioStylou"/>
+        <Class IRI="#simeioStylou"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSocialCareEquip"/>
+        <Class IRI="#SocialCareEquipment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSocialSolidarity"/>
+        <Class IRI="#SocialSolidarityService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSportKolymvisi"/>
+        <Class IRI="#kolymvisi"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpoudes"/>
+        <Class IRI="#postGraduate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStatus"/>
+        <Class IRI="#completed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStatus"/>
+        <Class IRI="#inProgress"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTaxi"/>
+        <Class IRI="#Taxi"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTheaters"/>
+        <Class IRI="#Theaters"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTimiZonis"/>
+        <Class IRI="#timiZonis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTypoLamptira"/>
+        <Class IRI="#typosLamptira"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVehiclesEquip"/>
+        <Class IRI="#Vehicles"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWasteBinsEquip"/>
+        <Class IRI="#WasteBins"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWater"/>
+        <Class IRI="#WaterService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCollectedBy"/>
+        <Class IRI="#Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConsumed"/>
+        <Class IRI="#People"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requestConsumed"/>
+        <Class IRI="#Citizen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportedBy"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supports"/>
+        <Class IRI="#CityGovernment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#use"/>
+        <Class IRI="#LandUse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#works"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksInCity"/>
+        <Class IRI="#CityAdministration"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasArithmosKadwn"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDimotEnot"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasKatigoriaApor"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasOdos"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasProgramma"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasValuePollution"/>
+        <DataProperty IRI="#hasValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasValueWeather"/>
+        <DataProperty IRI="#hasValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasaitimadate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasaitimakatigoria"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasaitimaperigrafi"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasperiohistreet"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasperiohistreetnum"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasArithmoGiaAkinito"/>
+        <Class IRI="#idioktisies"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasArithmosKadwn"/>
+        <Class IRI="#CleaningService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCheckinKolymvitirio"/>
+        <Class IRI="#kolymvisi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDateOfBirth"/>
+        <Class IRI="#CityEmployee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDateRypou"/>
+        <Class IRI="#Pollution"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDimotEnot"/>
+        <Class IRI="#CleaningService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEidikotita"/>
+        <Class IRI="#CityEmployee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHighTemperature"/>
+        <Class IRI="#Weather"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasIsxyLamptira"/>
+        <Class IRI="#isxysLamptira"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasKatastasiLamptira"/>
+        <Class IRI="#katastasi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasKatigoriaApor"/>
+        <Class IRI="#CleaningService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasKatigoriaRypou"/>
+        <Class IRI="#rypos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasKlhsh"/>
+        <Class IRI="#MunicipalPoliceService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasKlhshdate"/>
+        <Class IRI="#MunicipalPoliceService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLowTemperature"/>
+        <Class IRI="#Weather"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMarkaKaiChroma"/>
+        <Class IRI="#MunicipalPoliceService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMeanTemperature"/>
+        <Class IRI="#Weather"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMonada"/>
+        <Class IRI="#CityEmployee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOdoGiaAkinito"/>
+        <Class IRI="#idioktisies"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOdoGiaTimiZonis"/>
+        <Class IRI="#timiZonis"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOdoTheatrou"/>
+        <Class IRI="#Theaters"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOdos"/>
+        <Class IRI="#CleaningService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOnomaTheatrou"/>
+        <Class IRI="#Theaters"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPerParavasis"/>
+        <Class IRI="#paravasi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPeriohi"/>
+        <Class IRI="#e-requestPlatform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPoso"/>
+        <Class IRI="#posoParavasis"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProgramma"/>
+        <Class IRI="#CleaningService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProgrammaKolymvitiriou"/>
+        <Class IRI="#kolymvisi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRain"/>
+        <Class IRI="#Weather"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSimeio"/>
+        <Class IRI="#simeioParavasis"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSimeioLamptira"/>
+        <Class IRI="#simeioStylou"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStathmoMetrisis"/>
+        <Class IRI="#perioxi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStoixeiaAthloumenou"/>
+        <Class IRI="#kolymvisi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStudies"/>
+        <Class IRI="#CityEmployee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTimiGiaTimiZonis"/>
+        <Class IRI="#timiZonis"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTimiRypou"/>
+        <Class IRI="#rypos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTypoLampas"/>
+        <Class IRI="#typosLamptira"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValuePollution"/>
+        <Class IRI="#Pollution"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValueWeather"/>
+        <Class IRI="#Weather"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWInd"/>
+        <Class IRI="#Weather"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWeatherDate"/>
+        <Class IRI="#Weather"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasYpiresia"/>
+        <Class IRI="#e-requestPlatform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasaitimadate"/>
+        <Class IRI="#e-requestPlatform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasaitimakatigoria"/>
+        <Class IRI="#e-requestPlatform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasaitimaperigrafi"/>
+        <Class IRI="#e-requestPlatform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasaitimaproodos"/>
+        <Class IRI="#e-requestPlatform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasperiohistreet"/>
+        <Class IRI="#e-requestPlatform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasperiohistreetnum"/>
+        <Class IRI="#e-requestPlatform"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasArithmoGiaAkinito"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasArithmosKadwn"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCheckinKolymvitirio"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDateOfBirth"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDateRypou"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDimotEnot"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEidikotita"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHighTemperature"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasIsxyLamptira"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasKatastasiLamptira"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasKatigoriaApor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasKatigoriaRypou"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasKlhsh"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasKlhshdate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLowTemperature"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMarkaKaiChroma"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMeanTemperature"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMonada"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOdoGiaAkinito"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOdoGiaTimiZonis"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOdoTheatrou"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOdos"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOnomaTheatrou"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPerParavasis"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPeriohi"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPoso"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProgramma"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProgrammaKolymvitiriou"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRain"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSimeio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSimeioLamptira"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStathmoMetrisis"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStoixeiaAthloumenou"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStudies"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTimiGiaTimiZonis"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTimiRypou"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTypoLampas"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValuePollution"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValueWeather"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWInd"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWeatherDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYpiresia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasaitimadate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasaitimakatigoria"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasaitimaperigrafi"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasaitimaproodos"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasperiohistreet"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasperiohistreetnum"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CitizInvestor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://citizinvestor.com/
+
+Invest in the public projects you care about most</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CiviRCM</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://civicrm.org/
+
+A web-based Constituent Relationship Management (CRM) software geared toward meeting the needs of non-profit and other civic-sector organizations. CIVICRM supports their mission through contact management, fundraising, event management, member management, mass e-mail marketing, peer-to-peer campaigns, case management, and other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CivicInsight</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://civicinsight.com/index.html
+
+The application tracks properties and help residents make sense of complicated processes like code enforcement and building permits, alerts about what’s happening with properties in their neighbourhood, and analyse trends for strategic, data-driven decisions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Development_FastPass</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://lv-fastpass.herokuapp.com/#/
+
+The application combines parcel data, land use, zoning, building occupancy, and business incentives to help business owners research the best options to locate their businesses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fix_My_Street</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://www.fixmystreet.com/
+
+The application enable user to report, view, or discuss local problems, such as graffiti, fly tipping, broken paving slabs, or street lighting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hoyrespiro</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://hoyrespiro.people-project.eu/
+
+Web application for information about the city air quality extracted from environmental control networks already existing in a city. It provides a rapid and effective technological answer to the needs of people with special sensitivity to environmental allergies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Improve_My_City</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://icos.urenio.org/applications/improve-my-city/
+
+An application that enables citizens to report local problems and suggest solutions for improving the environment of their neighbourhood. Then the local government agencies take action to addresses the reported requests.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InfrastructureDigital</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Includes all digital elements of the 
+city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InfrastrusturePhysical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Includes all material elements of the 
+city, buildings and infrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Local_Wiki</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://icos.urenio.org/applications/localwiki/
+
+A grassroots effort to collect, share and open the local knowledge. Anyone can contribute and learn about local government, the neighbourhood, streets, social movements, social services, schools, and other facets of the community life.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Open_Air</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.openair-project.org/
+
+A web based platform to provide a collection of open-source tools for the analysis of air pollution data. Using the statistical/data analysis software R as a platform – a powerful, open-source programming language ideal for insightful data analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Open_Data_Catalogue</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://icos.urenio.org/applications/open-data-catalog/
+
+Originally developed for Philadelphia, the application provides access to open data sets, applications, and APIs related to a city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Open_Spending</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">icos.urenio.org/applications/openspending/
+
+An open platform that facilitates the presentation of financial information about local city budgets. Helps understand how governments spend money.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Open_Tree_Map</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://www.opentreemap.org/
+
+Web and smartphone application which provides an easy-to-use public inventorying platform enabling individuals, organizations, and governments to collaboratively create interactive and dynamic maps of a community’s tree population.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PlanIT_OS</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://living-planit.com/UOS_overview.htm
+
+The PlanIT Operating System™ or PlanIT OS™ is a standards based middleware product that provides real time sensing, control, spatial analytics, data integration, security, support and provisioning of ubiquitous context relevant applications for the Internet of Things. The PlanIT OS™ provides the infrastructure for solutions across a broad range of vertical markets from manufacturing through mining exploration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Prepared.ly</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://www.codeforamerica.org/apps/prepared-ly/
+
+Wildfires, hurricanes, tornadoes and natural disasters are a regular and real part of life. The application is easily redeployed for any type of disaster, offering near real-time information on home and business property risk, disaster preparedness tasks, the ability to track progress and set reminders, and connects to fire safety professionals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ShareAbouts</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://openplans.org/
+
+A web application for crowdsourced mapping. It can be customized for different purposes and collecting public input. Users can suggest a location, add a comment, support other suggestions and share locations with other users.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Smart_Marketplace</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://icos.urenio.org/applications/virtual-city-market/
+
+A virtual representation of a local marketplace, where local storekeepers hold e-shops. Includes also a business directory that presents local businesses and professionals on the city map. E-shops offer promotional coupons and discounts, and shops are assessed by customer reviews.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Spacehive</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://spacehive.com/
+
+Applocation of crowdfunding for civic projects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StreetMix</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">Streetmix http://icos.urenio.org/applications/streetmix/
+
+Promote two-way communication between planners and the public in the design and remix a cross-section of neighbourhood street.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Urbanflow</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://helsinki.urbanflow.io/
+
+Urbanflow, a joint effort of Nordkapp and Urbanscale, envisions an operating system for cities.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
