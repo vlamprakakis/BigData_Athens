@@ -1,0 +1,312 @@
+[PrefixDeclaration]
+:		http://www.semanticweb.org/aueb/cityontology/athens#
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+
+[SourceDeclaration]
+sourceUri	datasource1
+connectionUrl	jdbc:teiid:obda4@mm://localhost:31000
+username	user
+password	user1664!
+driverClass	org.postgresql.Driver
+
+[MappingDeclaration] @collection [[
+mappingId	urn:e-request date
+target		:e-requestPlatform/{aitima_id} a :e-requestPlatform ; :hasaitimadate {aitimadate}^^xsd:dateTime . 
+source		SELECT aitima_id, aitimadate
+			FROM aitima
+
+mappingId	urn:e-request perigrafi
+target		:e-requestPlatform/{aitima_id} a :e-requestPlatform ; :hasaitimaperigrafi {aitimaperigrafi}^^xsd:string . 
+source		SELECT aitima_id, aitimaperigrafi
+			FROM aitima
+
+mappingId	urn:e-request katigoria
+target		:e-requestPlatform/{aitima_id} a :e-requestPlatform ; :hasaitimakatigoria {aitimakatigoria}^^xsd:string . 
+source		SELECT aitima_id, aitimakatigoria
+			FROM aitima
+
+mappingId	urn:e-request street
+target		:e-requestPlatform/{aitima_id} a :e-requestPlatform ; :hasperiohistreet {periohistreet}^^xsd:string . 
+source		SELECT aitima_id, periohistreet
+			FROM aitima
+
+mappingId	urn:e-request completed
+target		:e-requestPlatform/{aitima_id} a :completed . 
+source		SELECT aitima_id, aitimaproodos
+			FROM aitima
+			WHERE aitimaproodos ='Ολοκληρωμένο';
+
+mappingId	urn:e-request in progress
+target		:e-requestPlatform/{aitima_id} a :inProgress . 
+source		SELECT aitima_id, aitimaproodos
+			FROM aitima
+			WHERE aitimaproodos ='Σε Εξέλιξη';
+
+mappingId	urn:e-request
+target		:e-requestPlatform/{aitima_id} a :e-requestPlatform . 
+source		SELECT DISTINCT aitima_id
+			FROM aitima
+
+mappingId	urn:aporimmatofora
+target		:CleaningService/{dromologio_id} a :CleaningService . 
+source		SELECT DISTINCT dromologio_id
+			FROM aporimmata
+
+mappingId	urn:aporimmatofora anakyklwsi
+target		:CleaningService/{dromologio_id} a :recycling . 
+source		SELECT dromologio_id, katigoriaapor
+			FROM aporimmata
+			WHERE katigoriaapor='ΑΝΑΚΥΚΛΩΣΗ';
+
+mappingId	urn:aporimmatofora organika aporimmata
+target		:CleaningService/{dromologio_id} a :nonRecycling . 
+source		SELECT dromologio_id, katigoriaapor
+			FROM aporimmata
+			WHERE katigoriaapor='ΟΡΓΑΝΙΚΟ';
+
+mappingId	urn:aporimmatofora arithmos vardias
+target		:CleaningService/{dromologio_id} a :CleaningService ; :hasProgramma {programma}^^xsd:string . 
+source		SELECT dromologio_id, programma
+			FROM aporimmata
+
+mappingId	urn:aporimmatofora arithmos kadwn
+target		:CleaningService/{dromologio_id} a :CleaningService ; :hasArithmosKadwn {arithmoskadwn}^^xsd:integer . 
+source		SELECT dromologio_id, arithmoskadwn
+			FROM aporimmata
+
+mappingId	urn:aporimmatofora dhmotiki enotita
+target		:CleaningService/{dromologio_id} a :CleaningService ; :hasDimotEnot {dimotikienotita}^^xsd:string . 
+source		SELECT dromologio_id, dimotikienotita
+			FROM aporimmata
+
+mappingId	urn:aporimmatofora odos
+target		:CleaningService/{dromologio_id} a :CleaningService ; :hasOdos {odos}^^xsd:string . 
+source		SELECT dromologio_id, odos
+			FROM aporimmata
+
+mappingId	urn:e-request periohi
+target		:e-requestPlatform/{aitima_id} a :e-requestPlatform ; :hasPeriohi {periohi_id}^^xsd:string . 
+source		SELECT aitima_id, periohiperigrafi
+			FROM aitima
+			JOIN  periohi ON aitima.periohi_id=periohi.periohi_id
+
+mappingId	urn:e-request ypiresia
+target		:e-requestPlatform/{aitima_id} a :e-requestPlatform ; :hasYpiresia {ypiresia_id}^^xsd:string . 
+source		SELECT aitima_id, titlosypiresias
+			FROM aitima
+			JOIN  ypiresia ON aitima.ypiresia_id=ypiresia.ypiresia_id
+
+mappingId	urn:metrisi kairou (id)
+target		:Weather/{metrisi_id} a :Weather . 
+source		SELECT DISTINCT metrisi_id
+			FROM metrisikairou
+
+mappingId	urn:weather date
+target		:Weather/{metrisi_id} a :Weather ; :hasWeatherDate {kairosdate}^^xsd:date . 
+source		SELECT metrisi_id, kairosdate
+			FROM metrisikairou
+
+mappingId	urn:weather mean temperature
+target		:Weather/{metrisi_id} a :Weather ; :hasMeanTemperature {meantemp}^^xsd:decimal . 
+source		SELECT metrisi_id, meantemp
+			FROM metrisikairou
+
+mappingId	urn:weather high temperature
+target		:Weather/{metrisi_id} a :Weather ; :hasHighTemperature {hightemp}^^xsd:decimal . 
+source		SELECT metrisi_id, hightemp
+			FROM metrisikairou
+
+mappingId	urn:weather low temperature
+target		:Weather/{metrisi_id} a :Weather ; :hasLowTemperature {lowtemp}^^xsd:decimal . 
+source		SELECT metrisi_id, lowtemp
+			FROM metrisikairou
+
+mappingId	urn:weather rain
+target		:Weather/{metrisi_id} a :Weather ; :hasRain {rain}^^xsd:decimal . 
+source		SELECT metrisi_id, rain
+			FROM metrisikairou
+
+mappingId	urn:ypallilos imerominia gennisis
+target		:CityAdministration/{ypallilos_id} a :CityEmployee ; :hasDateOfBirth {dateofbirth}^^xsd:dateTime . 
+source		SELECT ypallilos_id, dateofbirth
+			FROM ypallilos
+
+mappingId	urn:ypallilos polis
+target		:CityAdministration/{ypallilos_id} a :CityEmployee . 
+source		SELECT DISTINCT ypallilos_id
+			FROM ypallilos
+
+mappingId	urn:ypallilos spoudes
+target		:CityAdministration/{ypallilos_id} a :CityEmployee ; :hasStudies {metaptyxiako}^^xsd:string . 
+source		SELECT ypallilos_id, metaptyxiako, didaktoriko, ethnikisxoli
+			FROM ypallilos
+
+mappingId	urn:ypallilos eidikotita
+target		:CityAdministration/{ypallilos_id} a :CityEmployee ; :hasEidikotita {eidikotita}^^xsd:string . 
+source		SELECT ypallilos_id, "katigoria symvasis", "katigoria ekpaid ", eidikotita, vathmos
+			FROM ypallilos
+
+mappingId	urn:ypallilos monada pou ergazetai
+target		:CityAdministration/{ypallilos_id} a :CityEmployee ; :hasMonada {titlos}^^xsd:string . 
+source		SELECT ypallilos_id, titlos
+			FROM ypallilos
+			JOIN dieuthinsi ON ypallilos.dieythinsi_id=dieuthinsi.dieythinsi_id
+
+mappingId	urn:weather wind
+target		:Weather/{metrisi_id} a :Weather ; :hasWInd {avg_wind_speed}^^xsd:decimal . 
+source		SELECT metrisi_id, avg_wind_speed
+			FROM metrisikairou
+
+mappingId	urn:ypallilos exei metaptyxiako
+target		:CityAdministration/{ypallilos_id} a :postGraduate . 
+source		SELECT ypallilos_id, metaptyxiako
+			FROM ypallilos
+			WHERE metaptyxiako='ΝΑΙ'
+
+mappingId	urn:city police perigrafi paravasis
+target		:CityService/{klhsh_id} a :paravasi ; :hasPerParavasis {eidiki}^^xsd:string . 
+source		SELECT klhsh_id, eidiki
+			FROM klhsh
+
+mappingId	urn:city police
+target		:CityService/{klhsh_id} a :MunicipalPoliceService . 
+source		SELECT klhsh_id
+			FROM klhsh
+
+mappingId	urn:city police simeio paravasis
+target		:CityService/{klhsh_id} a :simeioParavasis ; :hasSimeio {street}^^xsd:string . 
+source		SELECT klhsh_id, street
+			FROM klhsh
+
+mappingId	urn:city police poso paravasis
+target		:CityService/{klhsh_id} a :posoParavasis ; :hasPoso {poso}^^xsd:string . 
+source		SELECT klhsh_id, poso
+			FROM klhsh
+
+mappingId	urn:city police marka autokinitou me paranomi stathmeusi
+target		:CityService/{klhsh_id} a :MunicipalPoliceService ; :hasMarkaKaiChroma {marka}^^xsd:string . 
+source		SELECT klhsh_id, marka, colour
+			FROM klhsh
+			JOIN ohima ON klhsh.ohima_id=ohima.ohima_id
+
+mappingId	urn:atmosfairiki molynsi
+target		:Sensor/{rypos_id} a :Pollution . 
+source		SELECT rypos_id
+			FROM atmosfrypansi
+
+mappingId	urn:atmosfairiki molynsi  times rypwn
+target		:Sensor/{rypos_id} a :rypos ; :hasTimiRypou {value_06_12_18}^^xsd:string . 
+source		SELECT rypos_id, value_06_12_18
+			FROM atmosfrypansi
+
+mappingId	urn:atmosfairiki molynsi stathmos metrisis
+target		:Sensor/{rypos_id} a :perioxi ; :hasStathmoMetrisis {periohi}^^xsd:string . 
+source		SELECT rypos_id, periohi, gmikos, gplatos
+			FROM atmosfrypansi
+
+mappingId	urn:atmosfairiki molynsi imerominia metrisis
+target		:Sensor/{rypos_id} a :Pollution ; :hasDateRypou {metrisidate}^^xsd:date . 
+source		SELECT rypos_id, metrisidate
+			FROM atmosfrypansi
+
+mappingId	urn:fotismos polis
+target		:CityEquipment/{fid} a :LightingEquipment . 
+source		SELECT fid
+			FROM fotismos
+
+mappingId	urn:fotismos polis katastasi lamptirwn
+target		:CityEquipment/{fid} a :katastasi ; :hasKatastasiLamptira {katastasis}^^xsd:string . 
+source		SELECT fid, katastasis
+			FROM fotismos
+
+mappingId	urn:fotismos polis styloi me lampes
+target		:CityEquipment/{fid} a :simeioStylou ; :hasSimeioLamptira {onom_odou}^^xsd:string . 
+source		SELECT fid, onom_odou, x, y
+			FROM fotismos
+
+mappingId	urn:fotismos polis isxys lamptirwn
+target		:CityEquipment/{fid} a :isxysLamptira ; :hasIsxyLamptira {isxis_lamp}^^xsd:integer . 
+source		SELECT fid, isxis_lamp
+			FROM fotismos
+
+mappingId	urn:fotismos polis typos lampas
+target		:CityEquipment/{fid} a :typosLamptira ; :hasTypoLampas {typos_lamp}^^xsd:string . 
+source		SELECT fid, typos_lamp, typos_fot
+			FROM fotismos
+
+mappingId	urn:theatra polis
+target		:LandUse/{fid} a :Theaters . 
+source		SELECT fid
+			FROM theaters
+
+mappingId	urn:theatra polis onomata
+target		:LandUse/{fid} a :Theaters ; :hasOnomaTheatrou {eponymia}^^xsd:string . 
+source		SELECT fid, eponymia
+			FROM theaters
+
+mappingId	urn:theatra polis dieythinseis
+target		:LandUse/{fid} a :Theaters ; :hasOdoTheatrou {dieuthinsi}^^xsd:string . 
+source		SELECT fid, dieuthinsi
+			FROM theaters
+
+mappingId	urn:sports kolymvisi
+target		:CityService/{use_id} a :kolymvisi . 
+source		SELECT use_id
+			FROM use
+
+mappingId	urn:sports kolymvisi programma athloumenwn
+target		:CityService/{use_id} a :kolymvisi ; :hasProgrammaKolymvitiriou {programma}^^xsd:string . 
+source		SELECT use_id, programma
+			FROM use
+
+mappingId	urn:sports kolymvisi imeres kai wres xrisis
+target		:CityService/{use_id} a :kolymvisi ; :hasCheckinKolymvitirio {checkin}^^xsd:dateTime . 
+source		SELECT use_id, checkin
+			FROM use
+
+mappingId	urn:sports kolymvisi stoixeia athloumenou
+target		:CityService/{use_id} a :kolymvisi ; :hasStoixeiaAthloumenou {katigoria}^^xsd:string . 
+source		SELECT use_id, katigoria, ilikiakiomada, fylo
+			FROM use
+			JOIN katigorias ON use.katigoria_id=katigorias.katigoria_id
+
+mappingId	urn:akinita kai katoikies tis polis
+target		:Building/{akinito_id} a :idioktisies . 
+source		SELECT akinito_id
+			FROM akinito
+
+mappingId	urn:akinita kai katoikies tis polis arithmos katoikion ana akinito
+target		:Building/{akinito_id} a :idioktisies ; :hasArithmoGiaAkinito {arithmosidioktision}^^xsd:integer . 
+source		SELECT akinito_id, arithmosidioktision
+			FROM akinito
+
+mappingId	urn:akinita kai katoikies tis polis_odos akinitou
+target		:Building/{akinito_id} a :idioktisies ; :hasOdoGiaAkinito {odos}^^xsd:string . 
+source		SELECT akinito_id, odos, arithmos
+			FROM akinito
+
+mappingId	urn:timi zonis akinitwn
+target		:Building/{timi_id} a :timiZonis . 
+source		SELECT timi_id
+			FROM timizonis
+
+mappingId	urn:timi zonis akinitvn_odos akinitou
+target		:Building/{timi_id} a :timiZonis ; :hasOdoGiaTimiZonis {odos}^^xsd:string . 
+source		SELECT timi_id, odos, apoper, eosper, apoart, eosart
+			FROM timizonis
+
+mappingId	urn:timi zonis akinitvn_timi akinitou ana tetragoniko
+target		:Building/{timi_id} a :timiZonis ; :hasTimiGiaTimiZonis {timizoni}^^xsd:string . 
+source		SELECT timi_id, timizoni
+			FROM timizonis
+
+mappingId	urn:atmosfairiki molynsi  katigoria rypou
+target		:Sensor/{rypos_id} a :rypos ; :hasKatigoriaRypou {ryposperigrafi}^^xsd:string . 
+source		SELECT rypos_id, ryposperigrafi
+			FROM atmosfrypansi
+]]
+
