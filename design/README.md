@@ -1,6 +1,6 @@
 **1. Data collection**
 
-During this phase the primary data sources from the corresponding units of the city of Athens were collected in various formats (.csv, .txt files. .xls, .shp)
+During this phase the primary data sources from the corresponding units of the city of Athens were collected in various formats (.csv, .txt files. .xls, .shp).
 
 **2. Data management and processing**
 
