@@ -16,3 +16,7 @@ During this phase the field ontology (city ontology) was created. The Protégé 
 
 Through the Protégé JDBC connector, the JBoss Application server was connected with the ontology. Then with active connection, mappings of the ontology with the databases were designed and SPARQL queries were executed on the ontology.
 
+The following picture illustrates the architecture and the components of the system implemented.
+
+![system architecture](https://user-images.githubusercontent.com/25846486/51075349-dd93d480-1692-11e9-8399-3f004d155396.gif)
+
