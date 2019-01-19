@@ -1,1 +1,1 @@
-## Synopsis of the project theory and implementation
+## Synopsis - Theoretical framework and implementation
